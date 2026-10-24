@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-mode="dark" data-chakra="root" data-chakra-css="chakra-01-root-grounding.css" data-chakra-ux="ux_10">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PrepRestore — Off-Grid Resilience, Heirloom Agroforestry &amp; Emergency Readiness Store</title>
+<meta name="description" content="PrepRestore (preprestore.com): Field-tested off-grid solar, atmospheric and gravity water purification, heirloom seed vaults, agroforestry food-forest kits, and 72-hour to 1-year sovereign resilience supplies." />
+<link rel="stylesheet" href="evolve-unified-theme.css" />
+<script src="refineme-widget.js" defer></script>
+</head>
+<body>
+<div class="chakra-bar">
+  <span class="brand-tag">PrepRestore // Sovereign Readiness, Heirloom Seeds &amp; Off-Grid Systems</span>
+  <div class="c-pills">
+    <button class="c-pill" data-set-chakra="root" onclick="document.documentElement.setAttribute('data-chakra','root');localStorage.setItem('ee_chakra','root')"><span class="c-dot" data-ee-u="506eba1f"></span>1 Root</button>
+    <button class="c-pill" data-set-chakra="sacral" onclick="document.documentElement.setAttribute('data-chakra','sacral');localStorage.setItem('ee_chakra','sacral')"><span class="c-dot" data-ee-u="2230de30"></span>2 Sacral</button>
+    <button class="c-pill" data-set-chakra="solar" onclick="document.documentElement.setAttribute('data-chakra','solar');localStorage.setItem('ee_chakra','solar')"><span class="c-dot" data-ee-u="b7e55c54"></span>3 Solar</button>
+    <button class="c-pill" data-set-chakra="heart" onclick="document.documentElement.setAttribute('data-chakra','heart');localStorage.setItem('ee_chakra','heart')"><span class="c-dot" data-ee-u="d29d2a46"></span>4 Heart</button>
+    <button class="c-pill" data-set-chakra="throat" onclick="document.documentElement.setAttribute('data-chakra','throat');localStorage.setItem('ee_chakra','throat')"><span class="c-dot" data-ee-u="c12b0335"></span>5 Throat</button>
+    <button class="c-pill" data-set-chakra="thirdeye" onclick="document.documentElement.setAttribute('data-chakra','thirdeye');localStorage.setItem('ee_chakra','thirdeye')"><span class="c-dot" data-ee-u="5b0b6805"></span>6 Third Eye</button>
+    <button class="c-pill" data-set-chakra="crown" onclick="document.documentElement.setAttribute('data-chakra','crown');localStorage.setItem('ee_chakra','crown')"><span class="c-dot" data-ee-u="04bf4fe6"></span>7 Crown</button>
+    <button class="c-pill" onclick="var d=document.documentElement;var m=d.getAttribute('data-mode')==='light'?'dark':'light';d.setAttribute('data-mode',m);d.setAttribute('data-theme',m);localStorage.setItem('ee_mode',m)">Dark / Light</button>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="hero">
+    <span class="badge">PrepRestore.com &middot; Sovereign Earth Readiness &amp; Regenerative Supply</span>
+    <h1>Prepare the Root. Restore the Land.</h1>
+    <p>Calm, field-proven preparedness and ecological restoration systems — combining LiFePO4 solar microgrids, gravity water purification, eternal-harvest heirloom seed vaults, and perennial agroforestry kits so your household and sanctuary thrive through any grid disruption.</p>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" onclick="selectPrepGoal('homestead', 0)">01 &middot; Build Your Resilience Kit</button>
+      <button type="button" class="btn btn-emerald" onclick="filterCatalog('seeds')">02 &middot; Heirloom Seed &amp; Agroforestry Vault</button>
+      <button type="button" class="btn btn-gold" onclick="filterCatalog('power')">03 &middot; Off-Grid Solar &amp; Water Systems</button>
+    </div>
+  </div>
+
+  <section class="ee-walkthrough" aria-label="PrepRestore 3-Step Guided Readiness Builder">
+    <div class="card">
+      <span class="badge">01 &middot; GUIDED SOVEREIGNTY WALKTHROUGH (396 Hz ROOT GROUNDING)</span>
+      <h2>3-Step Preparedness &amp; Land Restoration Configurator</h2>
+      <p>Walk through one clear step at a time to assemble a tailored readiness and regenerative homestead blueprint without overwhelm.</p>
+
+      <div class="ee-step-rail" role="tablist">
+        <button type="button" id="prep_tab_1" class="ee-step-btn is-active" onclick="goPrepStep(1)">Step 01 &middot; Pick Your Readiness Horizon</button>
+        <button type="button" id="prep_tab_2" class="ee-step-btn" onclick="goPrepStep(2)">Step 02 &middot; Configure Water, Power &amp; Seed Core</button>
+        <button type="button" id="prep_tab_3" class="ee-step-btn" onclick="goPrepStep(3)">Step 03 &middot; Review Sovereign Kit &amp; Checklist</button>
+      </div>
+
+      <div id="prep_panel_1" class="ee-step-panel">
+        <p><strong>Step 01 &middot; Choose Your Primary Readiness Scenario:</strong> Click any card below to load its calibrated supply matrix and advance automatically to Step 02.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>01 &middot; 14-Day Grid-Down Home &amp; Mobile Sanctuary</h3>
+            <p>Immediate blackout continuity for apartments, homes, or converted bus living: dual-fuel LiFePO4 power, gravity ceramic water filtration, and organic sprout/superfood rations.</p>
+            <button type="button" class="btn btn-primary" onclick="selectPrepGoal('grid_down', 1)">Select 14-Day Grid-Down Kit</button>
+          </div>
+          <div class="card">
+            <h3>02 &middot; 90-Day Sovereign Homestead &amp; Seed Nursery</h3>
+            <p>Full seasonal independence: 48V solar array, rainwater catchment + Berkey/carbon filtration, heirloom cold-hardy seed vault, and 5-gallon aerated compost tea brewer.</p>
+            <button type="button" class="btn btn-emerald" onclick="selectPrepGoal('homestead', 1)">Select 90-Day Homestead Kit</button>
+          </div>
+          <div class="card">
+            <h3>03 &middot; 5-Acre Agroforestry &amp; Eternal Harvest Food Forest</h3>
+            <p>Multi-decade ecological abundance: fast-growing shade &amp; nitrogen-fixing trees, walking onions, ground cherries, aronia berries, living willow fence cuttings, and medicinal herb guilds.</p>
+            <button type="button" class="btn btn-gold" onclick="selectPrepGoal('agroforestry', 1)">Select 5-Acre Food Forest Kit</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="prep_panel_2" class="ee-step-panel" hidden>
+        <p><strong>Step 02 &middot; Calibrate Household Size &amp; Climate Zone:</strong></p>
+        <div class="grid">
+          <div class="card">
+            <label for="prep_people"><strong>Household / Crew Size:</strong></label>
+            <select id="prep_people" onchange="updatePrepBlueprint()">
+              <option value="1">1–2 Sovereigns (Solo / Couple / Mobile Bus Rig)</option>
+              <option value="4" selected>3–5 Family / Sanctuary Crew</option>
+              <option value="12">6–15 Community Co-Op / Retreat Land</option>
+            </select>
+          </div>
+          <div class="card">
+            <label for="prep_zone"><strong>Hardiness &amp; Water Zone:</strong></label>
+            <select id="prep_zone" onchange="updatePrepBlueprint()">
+              <option value="tropical">Tropical / Subtropical Coastal (Zone 10–12 · Oahu / Island)</option>
+              <option value="temperate" selected>Temperate Four-Season (Zone 5b–8 · Midwest / Mainland)</option>
+              <option value="arid">Arid / High-Elevation Solar (Zone 7–9 · Southwest / Mountain)</option>
+            </select>
+          </div>
+        </div>
+        <div id="prep_step2_preview" class="res-box">Select your crew size and zone above, then advance to Step 03 for your complete manifest.</div>
+        <div class="btn-row">
+          <button type="button" class="btn btn-primary" onclick="goPrepStep(3)">Advance to Step 03 &middot; Complete Manifest</button>
+          <button type="button" class="btn" onclick="goPrepStep(1)">Back to Step 01</button>
+        </div>
+      </div>
+
+      <div id="prep_panel_3" class="ee-step-panel" hidden>
+        <div id="prep_final_manifest" class="res-box"></div>
+        <div class="btn-row">
+          <button type="button" class="btn btn-emerald" onclick="copyPrepManifest()">Copy Complete Readiness Checklist</button>
+          <button type="button" class="btn btn-primary" onclick="goPrepStep(1)">Start Another Configuration</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2>02 &middot; Curated PrepRestore Supply Catalog (Filter by Domain)</h2>
+  <div class="btn-row">
+    <button type="button" class="btn btn-primary" onclick="filterCatalog('all')">All Systems (12)</button>
+    <button type="button" class="btn btn-emerald" onclick="filterCatalog('seeds')">Heirloom Seeds &amp; Agroforestry</button>
+    <button type="button" class="btn btn-gold" onclick="filterCatalog('power')">Solar, Alternators &amp; Thermal</button>
+    <button type="button" class="btn" onclick="filterCatalog('water')">Water, Soil &amp; Compost Tea</button>
+    <button type="button" class="btn" onclick="filterCatalog('comms')">Redundant Comms &amp; Field Gear</button>
+  </div>
+  <div id="prep_catalog_grid" class="grid"></div>
+
+  <details class="ee-drawer">
+    <summary>03 &middot; Eternal Harvest &amp; Anastasia Bio-Resonant Seed Planting Protocol (Vault Reference)</summary>
+    <div class="card">
+      <h3>Cool, Dry, Dark Seed Vault Law &amp; Eternal Harvest Species</h3>
+      <p>A seed is a living embryo encased in a protective shell with its own nourishment. Keep all long-term seed vaults cool, dry (with silica desiccant packets), and dark inside air-tight glass or clay vessels.</p>
+      <ul>
+        <li><strong>Perennial &amp; Self-Seeding High-Value Crops:</strong> Ground cherries (early-succession food forest staple), Walking Onions, Rocambole &amp; Porcelain Garlic, Saffron Crocuses, Jerusalem Artichokes, Aronia Berries (top antioxidant density), Red Clover &amp; Dandelion herbal tea guilds, and Sourwood/Linden bee forage.</li>
+        <li><strong>Living Willow Architecture &amp; Fencing:</strong> Plant willow and cottonwood cuttings before spring bud-break to weave living wicker perimeter fences and multi-story shade canopies.</li>
+        <li><strong>5-Gallon Balanced Aerated Compost Tea:</strong> 1.5 lbs balanced bacterial-to-fungal compost, 1.6 oz humic acids, 1 oz liquid kelp, and 1 oz unsulphured black-strap molasses brewed 24 hours to inoculate roots and foliage.</li>
+      </ul>
+    </div>
+  </details>
+</div>
+
+<script>
+var PREP_STATE = { goal: 'homestead', people: 4, zone: 'temperate' };
+
+var CATALOG_ITEMS = [
+  { cat: 'seeds', code: 'PR-SEED-01', title: 'Eternal Harvest Perennial Seed Vault (42 Heirloom Varieties)', spec: 'Includes Walking Onions, Ground Cherries, Porcelain Garlic, Aronia, Bee Balm, Purple Coneflower, Kale, and Cold-Hardy Greens in Mylar + Glass.', tier: 'Core Food Security' },
+  { cat: 'seeds', code: 'PR-AGRO-02', title: 'Zone 5b–11 Fast-Succession Food Forest Guild Pack', spec: 'Nitrogen-fixing clover, guild berries (raspberry, blackcurrant, gooseberry), living willow fence cuttings, and pollinator attractors.', tier: '5-Acre Agroforestry' },
+  { cat: 'seeds', code: 'PR-SPROUT-03', title: 'Countertop Wheatgrass, Microgreen & Amino Sprout Station', spec: 'Zero-soil stainless mesh trays + organic hard red winter wheat, broccoli, radish, and fenugreek seed sacks for fresh winter greens in 7 days.', tier: 'Daily Living Nutrition' },
+  { cat: 'power', code: 'PR-SOLAR-04', title: 'LiFePO4 5.1kWh Sovereign Solar Generator + Bifacial Array', spec: '6,000-cycle lithium iron phosphate bank, pure sine-wave 3600W inverter, EMP-shielded MPPT controller, and folding solar blankets.', tier: 'Off-Grid Power' },
+  { cat: 'power', code: 'PR-THERM-05', title: 'Sun-Tracking Solar Water Heater & Micro-Hydro Alternator Kit', spec: 'Evacuated-tube thermal collector with heat-sensor sun alignment + permanent-magnet alternator for wind and creek micro-generation.', tier: 'Homestead Energy' },
+  { cat: 'power', code: 'PR-LIGHT-06', title: 'Faraday Lanterns, Crank Shortwave & Night-Vigil Fire Kit', spec: 'Warm-spectrum amber LED lanterns (zero blue-light circadian disruption), ferrocerium rods, hemp tinder, and NOAA/shortwave receiver.', tier: 'Grid-Down Ready' },
+  { cat: 'water', code: 'PR-WATER-07', title: 'Stainless Gravity Ceramic & Fluoride/Heavy-Metal Purifier', spec: 'Dual-stage 0.2-micron silver-impregnated ceramic + activated coconut shell carbon elements; purifies rain, creek, or municipal water with zero electricity.', tier: 'Pure Hydration' },
+  { cat: 'water', code: 'PR-SOIL-08', title: '5-Gallon Vortex Compost Tea Brewer + Humic/Kelp Inoculant', spec: 'High-dissolved-oxygen diaphragm pump, fungal/bacterial compost bag, soluble kelp, humic acid, and blackstrap molasses starter pack.', tier: 'Soil Regeneration' },
+  { cat: 'water', code: 'PR-IRRIG-09', title: 'Gravity Drip & Soil-Humidity Timed Sprinkler Manifold', spec: 'Low-pressure rain-barrel drip lines with mechanical moisture valves and brass garden claw aerator for zero-waste root zone watering.', tier: 'Water Conservation' },
+  { cat: 'comms', code: 'PR-COMM-10', title: 'Dual-WAN Failover Router & Off-Grid Meshtastic LoRa Nodes', spec: 'Automatic Wi-Fi + Gigabit Ethernet + cellular/satellite failover router paired with 3 solar-powered long-range encrypted LoRa text nodes.', tier: 'Zero-Drop Connectivity' },
+  { cat: 'comms', code: 'PR-MED-11', title: 'Botanical First-Aid & Apothecary Field Chest', spec: 'Goldenseal, yarrow styptic powder, comfrey salve, calendula tincture, raw sourwood honey wound dressings, and trauma essentials.', tier: 'Field Medicine' },
+  { cat: 'comms', code: 'PR-SHELT-12', title: 'Heavy-Duty Greenhouse Film & Articulated Canopy Tarp System', spec: 'UV-stabilized 6-mil greenhouse poly, hemp cordage, and tree-canopy suspension hardware for rapid winterization and sun-room germination.', tier: 'Shelter & Greenhouse' }
+];
+
+function goPrepStep(n) {
+  [1, 2, 3].forEach(function(i) {
+    var p = document.getElementById('prep_panel_' + i);
+    var t = document.getElementById('prep_tab_' + i);
+    if (p) p.hidden = (i !== n);
+    if (t) {
+      if (i === n) t.classList.add('is-active');
+      else t.classList.remove('is-active');
+    }
+  });
+  if (n === 2 || n === 3) updatePrepBlueprint();
+}
+
+function selectPrepGoal(goalKey, advance) {
+  PREP_STATE.goal = goalKey;
+  if (advance) goPrepStep(2);
+  else updatePrepBlueprint();
+}
+
+function updatePrepBlueprint() {
+  var pEl = document.getElementById('prep_people');
+  var zEl = document.getElementById('prep_zone');
+  if (pEl) PREP_STATE.people = parseInt(pEl.value || '4', 10);
+  if (zEl) PREP_STATE.zone = zEl.value || 'temperate';
+
+  var waterGal = PREP_STATE.people * 14 * 1.5;
+  var solarKwh = (PREP_STATE.people <= 2) ? '5.1 kWh LiFePO4 + 800W Solar' : (PREP_STATE.people <= 5) ? '10.2 kWh LiFePO4 + 2,400W Solar' : '30 kWh 48V Rack + 8 kW Solar & Micro-Hydro';
+  var goalTitles = {
+    grid_down: '14-Day Grid-Down Home & Mobile Sanctuary',
+    homestead: '90-Day Sovereign Homestead & Seed Nursery',
+    agroforestry: '5-Acre Agroforestry & Eternal Harvest Food Forest'
+  };
+  var zoneNotes = {
+    tropical: 'Oahu / Coastal Zone 10–12: Prioritize salt-tolerant windbreaks, year-round moringa/sweet potato/taro guilds, rainwater catchment, and silica-sealed seed jars.',
+    temperate: 'Zone 5b–8 Four-Season: Start cold-hardy brassicas, leeks, and onions 10–12 weeks before last frost; winterize sunroom & north greenhouse with hay bales and 6-mil poly.',
+    arid: 'Arid / High-Solar Zone: Deep-mulch swales, sunken waffle beds, shade-cloth nursery awnings, and automated dusk drip irrigation.'
+  };
+
+  var html = '<h3>Configured Blueprint: ' + goalTitles[PREP_STATE.goal] + '</h3>' +
+    '<p><strong>Crew Size:</strong> ' + PREP_STATE.people + ' people &middot; <strong>Minimum Water Buffer:</strong> ' + waterGal + ' gallons + Gravity Ceramic Filtration &middot; <strong>Energy Core:</strong> ' + solarKwh + '</p>' +
+    '<p><strong>Bioregional Strategy:</strong> ' + zoneNotes[PREP_STATE.zone] + '</p>' +
+    '<ul>' +
+    '<li><strong>01 &middot; Water &amp; Remineralization:</strong> Dual-stage gravity filter + trace ocean minerals + rainwater first-flush diverter.</li>' +
+    '<li><strong>02 &middot; Living Food &amp; Seed Vault:</strong> Eternal Harvest 42-Variety Vault + 7-Day Countertop Wheatgrass &amp; Sprout Trays + 5-Gallon Compost Tea Brewer.</li>' +
+    '<li><strong>03 &middot; Power &amp; Zero-Drop Comms:</strong> LiFePO4 solar bank + Dual-WAN Wi-Fi/Ethernet Failover + Meshtastic LoRa off-grid transceivers.</li>' +
+    '</ul>';
+
+  var s2 = document.getElementById('prep_step2_preview');
+  var s3 = document.getElementById('prep_final_manifest');
+  if (s2) s2.innerHTML = html;
+  if (s3) s3.innerHTML = html;
+}
+
+function copyPrepManifest() {
+  var s3 = document.getElementById('prep_final_manifest');
+  if (s3 && navigator.clipboard) {
+    navigator.clipboard.writeText(s3.innerText || s3.textContent);
+    s3.innerHTML += '<p><strong>Copied checklist to clipboard.</strong></p>';
+  }
+}
+
+function filterCatalog(cat) {
+  var rows = CATALOG_ITEMS.filter(function(item) { return cat === 'all' || item.cat === cat; });
+  var grid = document.getElementById('prep_catalog_grid');
+  if (!grid) return;
+  grid.innerHTML = rows.map(function(item) {
+    return '<div class="card">' +
+      '<span class="badge">' + item.code + ' &middot; ' + item.tier + '</span>' +
+      '<h3>' + item.title + '</h3>' +
+      '<p>' + item.spec + '</p>' +
+      '</div>';
+  }).join('');
+}
+
+filterCatalog('all');
+updatePrepBlueprint();
+</script>
+</body>
+</html>
